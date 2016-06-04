@@ -6,6 +6,6 @@ module.exports = function(config) {
     '*.spec.js'
     ],
     basePath: 'app/js/spec',
-    reporters: ['kjhtml']
+    reporters: ['html']
   });
 };

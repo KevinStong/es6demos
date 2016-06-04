@@ -1,10 +1,15 @@
-describe("test", function(){
-    it("will work?", function(){
-        var doWork = function(){
-                return 3;
+describe("let", function(){
+    it("scope", function(){
+        var test = function(){
+            
+            if (true) {
+                let x = 3;
+            }
+
+            return x;
         };
 
-        var result = doWork();
+        var result = test();
         expect(result).toBe(3);
     });
 });

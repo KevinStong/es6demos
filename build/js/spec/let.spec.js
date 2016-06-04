@@ -1,12 +1,17 @@
 "use strict";
 
-describe("test", function () {
-    it("will work?", function () {
-        var doWork = function doWork() {
-            return 8;
+describe("let", function () {
+    it("scope", function () {
+        var test = function test() {
+
+            if (true) {
+                var _x = 3;
+            }
+
+            return x;
         };
 
-        var result = doWork();
+        var result = test();
         expect(result).toBe(3);
     });
 });

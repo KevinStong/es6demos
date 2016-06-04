@@ -12,6 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-jasmine": "^2.3.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-print": "^2.0.1",
     "gulp-watch": "^4.3.6",
     "gulp-webserver": "^0.9.1",
@@ -19,7 +20,8 @@
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
-    "karma-jasmine-html-reporter": "^0.2.0"
+    "karma-jasmine-html-reporter": "^0.2.0",
+    "karma-jasmine-html-reporter-livereload": "^1.0.0"
   },
   "main": "index.js",
   "scripts": {
