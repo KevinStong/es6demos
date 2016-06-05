@@ -37,15 +37,11 @@ gulp.task('web', ['build', 'watch'], function() {
         .pipe(webserver({open: true}));
 });
 
-gulp.task('tdd', function (done) {
+gulp.task('specs', function (done) {
   livereload.listen(35729);
   gulp.watch('app/js/spec/*.js', ['js']).on('change', livereload.changed);
-  
+
   new Server({
     configFile: __dirname + '/karma.conf.js'
   }, done).start();
-});
-
-gulp.task('specs', ['build', 'tdd'], function() {
-    
 });

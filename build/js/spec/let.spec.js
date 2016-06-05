@@ -5,7 +5,7 @@ describe("let", function () {
         var test = function test() {
 
             if (true) {
-                var _x = 3;
+                var x = 3;
             }
 
             return x;

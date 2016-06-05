@@ -3,7 +3,7 @@ describe("let", function(){
         var test = function(){
             
             if (true) {
-                let x = 3;
+                var x = 3;
             }
 
             return x;
