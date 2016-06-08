@@ -1,9 +1,14 @@
 describe("const", function(){
-    it("assignment", function(){
+    it("working with const keyword", function(){
 
-        const LIMIT = 3;
+        const PERSON = {first: "jeff"};
 
-        expect(LIMIT).toBe(3);
+        Object.freeze(PERSON);
+        Object.seal(PERSON);
+        
+        PERSON.last = "Mihalik"
+
+        expect(PERSON.first).toBe("jeff");
 
     });
 });

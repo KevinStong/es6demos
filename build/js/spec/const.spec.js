@@ -1,10 +1,15 @@
 "use strict";
 
 describe("const", function () {
-    it("assignment", function () {
+    it("working with const keyword", function () {
 
-        var LIMIT = 3;
+        var PERSON = { first: "jeff" };
 
-        expect(LIMIT).toBe(3);
+        Object.freeze(PERSON);
+        Object.seal(PERSON);
+
+        PERSON.last = "Mihalik";
+
+        expect(PERSON.first).toBe("jeff");
     });
 });

@@ -1,15 +1,16 @@
 describe("let", function(){
-    it("scope", function(){
+    it("block scoping for the win", function(){
         var test = function(){
-            
+let x = 2;
             if (true) {
-                var x = 3;
+                
+                let x = 3;
             }
 
             return x;
         };
 
         var result = test();
-        expect(result).toBe(3);
+        expect(result).toBe(2);
     });
 });
