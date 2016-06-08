@@ -1,9 +1,9 @@
 describe("const", function(){
     it("assignment", function(){
 
-        const LIMIT = [1,'puppies'];
+        const LIMIT = 3;
 
-        expect(LIMIT.length).toBe(2);
+        expect(LIMIT).toBe(3);
 
     });
 });

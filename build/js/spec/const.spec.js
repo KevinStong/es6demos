@@ -3,8 +3,8 @@
 describe("const", function () {
     it("assignment", function () {
 
-        var LIMIT = [1, 'puppies'];
+        var LIMIT = 3;
 
-        expect(LIMIT.length).toBe(2);
+        expect(LIMIT).toBe(3);
     });
 });
